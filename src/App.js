@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
 
-function App() {
+import React from "react";
+import TableComponent from "./TableComponent";
+
+const App = () => {
+  const data = [
+    { column1: "Data 1", column2: "Data 2", column3: "Data 3" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+    { column1: "Data 4", column2: "Data 5", column3: "Data 6" },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TableComponent data={data} />
     </div>
   );
-}
+};
 
 export default App;
